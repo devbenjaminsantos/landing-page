@@ -18,7 +18,7 @@ Landing page desenvolvida para apresentação pessoal e prática de Front-End, c
 - JavaScript (Vanilla)
 
 # Como Rodar o Projeto
-Não é necessário instalar dependências. É preciso apenas abrir o arquivo 'index.html' em qualquer navegador.
+Não é necessário instalar dependências. É preciso apenas abrir o arquivo `index.html` em qualquer navegador.
 
 # Estrutura do Projeto
 - index.html
@@ -32,6 +32,6 @@ Não é necessário instalar dependências. É preciso apenas abrir o arquivo 'i
 - Adicionar novos projetos à seção projetos e elaborar uma ligação para cada página.
 
 # Autor
-Benjamin Montenegro
-GitHub: https://github.com/devbenjaminsantos
-LinkedIn: www.linkedin.com/in/benjaminmontenegro
+- Benjamin Montenegro
+- GitHub: https://github.com/devbenjaminsantos
+- LinkedIn: www.linkedin.com/in/benjaminmontenegro
