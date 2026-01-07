@@ -1,0 +1,282 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo geral */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #020617;        /* fundo geral */
+  color: #e5e7eb;
+}
+
+/* Container central */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cabeçalho */
+.header {
+  background: radial-gradient(circle at top left, #1e293b, #020617 60%);
+  padding-bottom: 3rem;
+}
+
+.nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero (capa) */
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1rem 0;
+}
+
+.hero-text h2 {
+  font-size: 2.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-text p {
+  max-width: 520px;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  font-size: 0.98rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.primary {
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  border: 1px solid #38bdf8;
+  color: #e5e7eb;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+}
+
+/* Seções com fundo destacado */
+.section-alt {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 2rem 1.25rem;
+  border-radius: 0.75rem;
+}
+
+/* Habilidades */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skills h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.skills ul {
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.skills li + li {
+  margin-top: 0.25rem;
+}
+
+/* Projetos */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #38bdf8;
+}
+
+/* Contato */
+.contact-list {
+  list-style: none;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.contact-list li + li {
+  margin-top: 0.3rem;
+}
+
+.contact-list a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+.footer {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none; /* fazer um menu mobile */
+  }
+
+  .hero-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .section-alt {
+    padding: 1.5rem 1.1rem;
+  }
+}
+
+/* ===== Seletor de Idioma ===== */
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid #38bdf8;
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  transition: 0.2s ease;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+}
+
+.lang-btn.active {
+  background: #38bdf8;
+  color: #0f172a;
+  opacity: 1;
+  font-weight: 600;
+}
