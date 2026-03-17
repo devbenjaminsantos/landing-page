@@ -14,7 +14,7 @@ DESIGN SYSTEM
   --color-border: #334155;
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.2): ;
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* LIGHT THEME */
@@ -27,7 +27,7 @@ DESIGN SYSTEM
   --color-text-secondary: #475569;
   --color-primary: #0ea5e9;
   --color-primary-dark: #0284c7;
-  --color-border: #e238f0;
+  --color-border: #e2e8f0;
 
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -252,6 +252,14 @@ NAVBAR
   font-weight: var(--font-weight-medium);
   transition: var(--transition-fast);
   position: relative;
+}
+
+.nav-links a.active {
+  color: var(--color-text);
+}
+
+.nav-links a.active::after {
+  width: 100%;
 }
 
 .nav-links a::after {
@@ -622,7 +630,7 @@ SECTION HEADER REFINED
 }
 
 /* ===============
-JOURNEY REFINED
+EXPERIENCE REFINED
 =============== */
 .timeline {
   position: relative;
@@ -649,15 +657,61 @@ JOURNEY REFINED
 }
 
 /* ===============
-CERTIFICATION REFINED
+CERTIFICATE REFINED
 =============== */
-.certification-card {
-  min-height: 180px;
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  min-height: 220px;
 }
 
-.certification-card h3 {
+.certificate-card h3 {
   color: var(--color-primary);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.certificate-stack {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.certificate-details {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.certificate-details p {
+  color: var(--color-text-secondary);
+  font-size: var (--font-size-sm);
+}
+
+.certificate-year {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.35rem 0.7rem;
+  border-radius: var(--radius-full);
+  background-color: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.platform-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.platform-badge.hotmart {
+  background-color: rgba(255, 106, 0, 0.12);
+  border: 1px solid rgba(255, 106, 0, 0.25);
+  color: #ff6a00;
 }
 
 /* ===============
@@ -677,4 +731,124 @@ CONTACT REFINED
 
 .contact-info p:hover {
   background-color: var(--color-surface-hover);
+}
+
+/* ===============
+SCROLL REVEAL
+=============== */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================
+SKILL BOXES
+================== */
+.skills-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 90px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.9rem;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.skill-box i {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.skill-box span {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.skill-box:hover {
+  background-color: var(--color-surface-hover);
+  transform: translateY(-2px);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* =================
+PROJECT TAGS
+================== */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-full);
+  background-color: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===============
+CONTACT CLICKCABLE
+=============== */
+.contact-info {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--spacing-md);
+  padding: var(--spacing-md);
+  transition: var(--transition-fast);
+}
+
+.contact-item:hover {
+  background-color: var(--color-surface-hover);
+  transform: translateY(-2px);
+}
+
+.contact-item strong {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+}
+
+.contact-item span {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  word-break: break-word;
 }

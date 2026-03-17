@@ -7,6 +7,11 @@
     <title>Benjamin.dev | Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
 
   <body>
@@ -17,12 +22,18 @@
         <h1 class="logo">Benjamin.dev</h1>
 
         <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiência">Jornada</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#certificacoes">Certificações</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre" data-i18n="nav_about">Sobre</a></li>
+          <li><a href="#habilidades" data-i18n="nav_skills">Habilidades</a></li>
+          <li>
+            <a href="#experiencia" data-i18n="nav_experience">Experiência</a>
+          </li>
+          <li><a href="#projetos" data-i18n="nav_projects">Projetos</a></li>
+          <li>
+            <a href="#certificacoes" data-i18n="nav_certifications"
+              >Certificações</a
+            >
+          </li>
+          <li><a href="#contato" data-i18n="nav_contact">Contato</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -38,21 +49,47 @@
       <section id="home" class="hero">
         <div class="hero-content">
           <div class="hero-text">
-            <h2>Olá, eu sou Benjamin</h2>
+            <h2 data-i18n="hero_title">Olá, eu sou Benjamin</h2>
 
-            <h3>Front-End Developer in Training</h3>
+            <h3 data-i18n="hero_subtitle">Desenvolvedor Front-End</h3>
 
-            <p>
-              Estudante de Análise e Desenvolvimento de Sistemas focado em
-              desenvolvimento web, construção de interfaces e criação de
-              projetos práticos.
+            <p data-i18n="hero_description">
+              1 ano de experiência • 5˚ período em ADS • Inglês C1 Construindo
+              interfaces modernas e responsivas, além de sistemas eficientes e
+              seguros.
             </p>
 
             <div class="hero-buttons">
-              <a href="#projetos" class="btn">Ver Projetos</a>
-              <a href="github.com/devbenjaminsantos" class="btn-secondary"
-                >GitHub</a
+              <a data-i18n="hero_btn_projects" href="#projetos" class="btn">
+                Ver Projetos
+              </a>
+
+              <a
+                href="https://github.com/devbenjaminsantos"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
               >
+                GitHub
+              </a>
+
+              <a
+                href="https://linkedin.com/in/benjaminmontenegro"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="assets/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
+              >
+                Currículo
+              </a>
             </div>
           </div>
           <!--
@@ -66,97 +103,171 @@
     <!-- MAIN -->
     <main>
       <!-- SOBRE -->
-      <section id="sobre" class="section">
+      <section id="sobre" class="section reveal">
         <div class="container">
           <div class="section-header">
-            <h2>Sobre Mim</h2>
-            <p>Um pouco sobre minha jornada e objetivos.</p>
+            <h2 data-i18n="about_title">Sobre Mim</h2>
+            <p data-i18n="about_subtitle">
+              Um pouco sobre minha jornada e objetivos.
+            </p>
           </div>
 
           <div class="about-content">
-            <p>
-              Atualmente estudo Análise e Desenvolvimento de Sistemas e estou
-              construindo minha base em desenvolvimento web com HTML, CSS e
-              JavaScript.
+            <p data-i18n="about_p1">
+              Desenvolvedor Front-End com 1 ano de experiência profissional,
+              atualmente cursando o 5˚ período de Análise e Desenvolvimento de
+              Sistemas. Foco em interfaces responsivas, organização de código e
+              componentização.
             </p>
-
-            <p>
-              Tenho interesse especial em criação de interfaces, organização de
-              código e construção de projetos que demonstrem evolução técnica.
+            <p data-i18n="about_p2">
+              Aprimorando e construindo projetos que cobrem o ciclo completo de
+              desenvolvimento, desde o Front-End ao Back-End com C# e SQL
+              Server. Inglês avançado (C1) e comprometido com aprendizado
+              contínuo.
             </p>
           </div>
         </div>
       </section>
 
       <!-- HABILIDADES -->
-      <section id="habilidades" class="section">
+      <section id="habilidades" class="section reveal">
         <div class="container">
           <div class="section-header">
-            <h2>Habilidades</h2>
-            <p>Tecnologias e ferramentas que fazem parte da minha jornada.</p>
+            <h2 data-i18n="skills_title">Habilidades</h2>
+            <p data-i18n="skills_subtitle">
+              Tecnologias e ferramentas que fazem parte do meu repertório.
+            </p>
           </div>
 
           <div class="skills-grid">
             <article class="card skills-card">
-              <h3>Front-End</h3>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-              </ul>
+              <h3 data-i18n="skills_frontend">Front-End</h3>
+              <div class="skills-items">
+                <div class="skill-box">
+                  <i class="devicon-html5-plain colored skill-icon"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-box">
+                  <i class="devicon-css3-plain colored skill-icon"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-box">
+                  <i class="devicon-javascript-plain colored skill-icon"></i>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="skill-box">
+                  <i class="devicon-bootstrap-plain colored skill-icon"></i>
+                  <span>Bootstrap</span>
+                </div>
+
+                <div class="skill-box">
+                  <i class="devicon-react-original colored skill-icon"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-box">
+                  <i class="devicon-vite-original colored skill-icon"></i>
+                  <span>Vite</span>
+                </div>
+              </div>
             </article>
 
             <article class="card skills-card">
-              <h3>Ferramentas</h3>
-              <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>GitHub Pages</li>
-              </ul>
+              <h3 data-i18n="skills_tools">Ferramentas</h3>
+              <div class="skills-items">
+                <div class="skill-box">
+                  <i class="devicon-git-plain colored skill-icon"></i>
+                  <span>Git</span>
+                </div>
+
+                <div class="skill-box">
+                  <i class="devicon-github-original colored skill-icon"></i>
+                  <span>GitHub</span>
+                </div>
+
+                <div class="skill-box">
+                  <i class="devicon-npm-original colored skill-icon"></i>
+                  <span>NPM</span>
+                </div>
+
+                <div class="skill-box">
+                  <i class="devicon-figma-plain colored skill-icon"></i>
+                  <span>Figma</span>
+                </div>
+              </div>
             </article>
 
             <article class="card skills-card">
-              <h3>Back-End / Banco de Dados</h3>
-              <ul>
-                <li>C#</li>
-                <li>API REST</li>
-                <li>SQL Server</li>
-              </ul>
+              <h3 data-i18n="skills_backend">Back-End / Banco de Dados</h3>
+              <div class="skills-items">
+                <div class="skill-box">
+                  <i
+                    class="devicon-microsoftsqlserver-plain colored skill-icon"
+                  ></i>
+                  <span>SQL Server</span>
+                </div>
+
+                <div class="skill-box">
+                  <i class="devicon-csharp-plain colored skill-icon"></i>
+                  <span>C#</span>
+                </div>
+
+                <div class="skill-box">
+                  <i class="devicon-dotnetcore-plain colored skill-icon"></i>
+                  <span>ASP.NET</span>
+                </div>
+              </div>
             </article>
 
             <article class="card skills-card">
-              <h3>Próximos Passos</h3>
-              <ul>
-                <li>Azure</li>
-                <li>Docker</li>
-                <li>TypeScript</li>
-                <li>Node.js</li>
-              </ul>
+              <h3 data-i18n="skills_next">Próximos Passos</h3>
+              <div class="skills-items">
+                <div class="skill-box">
+                  <i class="devicon-python-plain colored skill-icon"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-box">
+                  <i class="devicon-django-plain colored skill-icon"></i>
+                  <span>Django</span>
+                </div>
+                <div class="skill-box">
+                  <i class="devicon-nodejs-plain colored skill-icon"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-box">
+                  <i class="devicon-azure-plain colored skill-icon"></i>
+                  <span>Azure</span>
+                </div>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- JORNADA -->
-      <section id="jornada" class="section">
+      <!-- EXPERIÊNCIA -->
+      <section id="experiencia" class="section reveal">
         <div class="container">
           <div class="section-header">
-            <h2>Minha Jornada</h2>
-            <p>Evolução na programação.</p>
+            <h2 data-i18n="experience_title">Experiência</h2>
+            <p data-i18n="experience_subtitle">
+              Minhas experiências profissionais.
+            </p>
           </div>
 
           <div class="timeline">
             <article class="card timeline-item">
-              <h3>2025</h3>
-              <p>
-                Início dos estudos mais estruturados em desenvolvimento web.
+              <h3 data-i18n="experience_doss_title">Doss Imobiliária</h3>
+              <p data-i18n="experience_doss_text">
+                Desenvolvimento e manutenção de landing pages e interfaces
+                responsivas para o mercado imobiliário. Responsividade
+                mobile-first, estilização moderna, versionamento com Git e
+                melhorias que contribuíram para aumento de 30% na captação de
+                leads.
               </p>
             </article>
-
+            <!--
             <article class="card timeline-item">
-              <h3>HTML / CSS / JS</h3>
+              <h3>Freelancers</h3>
               <p>
                 Construção de projetos práticos e entendimento da base da web.
               </p>
@@ -165,31 +276,93 @@
             <article class="card timeline-item">
               <h3>2026</h3>
               <p>Primeiro projeto publicado com GitHub Pages.</p>
-            </article>
+            </article> -->
           </div>
         </div>
       </section>
 
       <!-- PROJETOS -->
-      <section id="projetos" class="section">
+      <section id="projetos" class="section reveal">
         <div class="container">
           <div class="section-header">
-            <h2>Projetos</h2>
-            <p>Projetos que mostram minha evolução prática.</p>
+            <h2 data-i18n="projects_title">Projetos</h2>
+            <p data-i18n="projects_subtitle">
+              Projetos que acompanham minha jornada no mundo do desenvolvimento
+              de software.
+            </p>
           </div>
 
           <div class="projects-grid">
             <article class="card project-card">
-              <h3>Landing Page</h3>
+              <h3 data-i18n="project_admin_title">Painel Administrativo</h3>
 
-              <p>
-                Projeto de landing page pessoal com suporte a dois idiomas,
-                GitHub Pages e organização de código.
+              <p data-i18n="project_admin_description">
+                Interface administrativa responsiva desenvolvida com foco em
+                organização de dados e experiência do usuário. Permite
+                gerenciamento eficiente de informações e visualização clara de
+                status e filtros aplicados.
               </p>
 
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Bootstrap</span>
+                <span class="project-tag">jQuery</span>
+              </div>
+
               <div class="project-links">
-                <a href="#">GitHub</a>
-                <a href="#">Live</a>
+                <a
+                  href="https://github.com/devbenjaminsantos/olympus-admin-panel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+
+                <a
+                  href="https://olympusadminpanel.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live
+                </a>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <h3 data-i18n="project_finance_title">Dashboard Financeiro</h3>
+
+              <p data-i18n="project_finance_description">
+                Aplicação web para visualização e organização de gastos. Permite
+                visualizar gastos por categoria, filtrar por mês e ano, e
+                acompanhar a evolução financeira ao longo do tempo. Além disso,
+                é responsivo e otimizado para diferentes dispositivos,
+                garantindo uma experiência fluida tanto em desktop quanto em
+                mobile.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Bootstrap</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">Vite</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/devbenjaminsantos/finance-dashboard-react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+                <a
+                  href="https://finance-dashboard-react-six.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live</a
+                >
               </div>
             </article>
           </div>
@@ -197,39 +370,123 @@
       </section>
 
       <!-- CERTIFICAÇÕES -->
-      <section id="certificacoes" class="section">
+      <section id="certificacoes" class="section reveal">
         <div class="container">
           <div class="section-header">
-            <h2>Certificações</h2>
-            <p>Cursos e estudos complementares.</p>
+            <h2 data-i18n="certifications_title">Certificações</h2>
+            <p data-i18n="certifications_subtitle">
+              Cursos e estudos complementares.
+            </p>
           </div>
 
           <div class="certifications-grid">
             <article class="card certificate-card">
-              <h3>HTML e CSS</h3>
-              <p>Curso de desenvolvimento web.</p>
+              <h3 data-i18n="certifications_item_1_title">
+                Desenvolvimento Front-End
+              </h3>
+              <p class="certificate-stack">
+                HTML • CSS • JavaScript • Bootstrap • jQuery
+              </p>
+              <div class="certificate-details">
+                <p>
+                  <span class="platform-badge hotmart">Hotmart</span>
+                </p>
+              </div>
+              <span class="certificate-year">2025</span>
+            </article>
+
+            <article class="card certificate-card">
+              <h3 data-i18n="certifications_item_2_title">
+                Desenvolvimento Back-End
+              </h3>
+
+              <p class="certificate-stack">
+                C# • ASP.NET • API REST • Microsserviços
+              </p>
+
+              <div class="certificate-details">
+                <p>
+                  <span class="platform-badge hotmart">Hotmart</span>
+                </p>
+              </div>
+
+              <span class="certificate-year">2025</span>
+            </article>
+
+            <article class="card certificate-card">
+              <h3 data-i18n="certifications_item_3_title">Banco de Dados</h3>
+              <p class="certificate-stack">SQL Server</p>
+              <div class="certificate-details">
+                <p>
+                  <span class="platform-badge hotmart">Hotmart</span>
+                </p>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- CONTATO -->
-      <section id="contato" class="section">
+      <!-- FREELANCERS
+       <section id="freelancers" class="section reveal">
         <div class="container">
           <div class="section-header">
-            <h2>Contato</h2>
-            <p>Vamos conversar sobre projetos e oportunidades.</p>
+            <h2>Freelancers</h2>
+            <p>Projetos freelance e colaborações.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="card project-card">
+              <h3>Projeto X</h3>
+              <p>Desenvolvimento de site institucional para empresa local.
+
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    -->
+
+      <!-- CONTATO 
+      <section id="contato" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="contact_title">Contato</h2>
+            <p data-i18n="contact_subtitle">Vamos conversar sobre projetos e oportunidades.</p>
           </div>
 
           <div class="contact-content">
             <div class="contact-info">
-              <p>Email: benjaminmontenegro.bm@gmail.com</p>
-              <p>GitHub: github.com/devbenjaminmontenegro</p>
-              <p>LinkedIn: linkedin.com/in/benjaminmontenegro</p>
+              <a
+                class="contact-item"
+                href="mailto:benjaminmontenegro.bm@gmail.com"
+              >
+                <strong>Email</strong>
+                <span>benjaminmontenegro.bm@gmail.com</span>
+              </a>
+
+              <a
+                class="contact-item"
+                href="https://github.com/devbenjaminsantos"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>GitHub</strong>
+                <span>github.com/devbenjaminsantos</span>
+              </a>
+
+              <a
+                class="contact-item"
+                href="https://www.linkedin.com/in/benjaminmontenegro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/benjaminmontenegro</span>
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
     </main>
 
     <!-- FOOTER -->
