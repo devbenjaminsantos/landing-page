@@ -36,7 +36,6 @@ LANGUAGE SYSTEM
 
 const translations = {
   pt: {
-
     // Navbar
     nav_about: "Sobre",
     nav_skills: "Habilidades",
@@ -51,47 +50,52 @@ const translations = {
     hero_description:
       "1 ano de experiência • 5˚ período em ADS • Inglês C1. Construindo interfaces modernas e responsivas, além de sistemas eficientes e seguros.",
     hero_btn_projects: "Ver Projetos",
-  
+
     // Sobre
     about_title: "Sobre Mim",
     about_subtitle: "Um pouco sobre minha jornada e objetivos.",
-    about_p1: 
-    "Desenvolvedor Front-End com 1 ano de experiência profissional, atualmente cursando o 5˚ período de Análise e Desenvolvimento de Sistemas. Foco em interfaces responsivas, organização de código e componentização.",
-    about_p2: 
-    "Aprimorando e construindo projetos que cobrem o ciclo completo de desenvolvimento, desde o Front-End ao Back-End com C# e SQL Server. Inglês avançado (C1) e comprometido com aprendizado contínuo.",
+    about_p1:
+      "Desenvolvedor Front-End com 1 ano de experiência profissional, atualmente cursando o 5˚ período de Análise e Desenvolvimento de Sistemas. Foco em interfaces responsivas, organização de código e componentização.",
+    about_p2:
+      "Aprimorando e construindo projetos que cobrem o ciclo completo de desenvolvimento, desde o Front-End ao Back-End com C# e SQL Server. Inglês avançado (C1) e comprometido com aprendizado contínuo.",
 
     // Habilidades
     skills_title: "Habilidades",
-    skills_text: "Tecnologias e ferramentas que fazem parte do meu repertório.",
+    skills_subtitle:
+      "Tecnologias e ferramentas que fazem parte do meu repertório.",
     skills_frontend: "Front-End",
     skills_tools: "Ferramentas",
-    skills_backend: "Back-End",
+    skills_backend: "Back-End / Banco de Dados",
     skills_next: "Próximos Passos",
 
     // Experiência
     experience_title: "Experiência",
     experience_subtitle: "Minhas experiências profissionais.",
     experience_doss_title: "Doss Imobiliária",
-    experience_doss_text: 
-    "Desenvolvimento e manutenção de landing pages e interfaces responsivas para o mercado imobiliário. Responsividade mobile-first, estilização moderna, versionamento com Git e melhorias que contribuíram para aumento de 30% na captação de leads.",
+    experience_doss_text:
+      "Desenvolvimento e manutenção de landing pages e interfaces responsivas para o mercado imobiliário. Responsividade mobile-first, estilização moderna, versionamento com Git e melhorias que contribuíram para aumento de 30% na captação de leads.",
 
     // Projetos
     projects_title: "Projetos",
-    projects_subtitle: "Projetos que acompanham minha jornada no mundo do desenvolvimento de software.",
+    projects_subtitle:
+      "Projetos que acompanham minha jornada no mundo do desenvolvimento de software.",
     project_admin_title: "Painel Administrativo",
-    project_admin_description: 
-    "Interface administrativa responsiva desenvolvida com foco em organização de dados e experiência do usuário. Permite gerenciamento eficiente de informações e visualização clara de status e filtros aplicados.",
+    project_admin_description:
+      "Interface administrativa responsiva desenvolvida com foco em organização de dados e experiência do usuário. Permite gerenciamento eficiente de informações e visualização clara de status e filtros aplicados.",
     project_finance_title: "Dashboard Financeiro",
-    project_finance_description: 
-    "Aplicação web para visualização e organização de gastos. Permite visualizar gastos por categoria, filtrar por mês e ano, e acompanhar a evolução financeira ao longo do tempo. Além disso, é responsivo e otimizado para diferentes dispositivos, garantindo uma experiência fluida tanto em desktop quanto em mobile.",
-    
+    project_finance_description:
+      "Aplicação web para visualização e organização de gastos. Permite visualizar gastos por categoria, filtrar por mês e ano, e acompanhar a evolução financeira ao longo do tempo. Além disso, é responsivo e otimizado para diferentes dispositivos, garantindo uma experiência fluida tanto em desktop quanto em mobile.",
+
     // Certificações
     certifications_title: "Certificações",
-    certifications_text: "Cursos e estudos complementares.",
+    certifications_subtitle: "Cursos e estudos complementares.",
+    certifications_item_1_title: "Desenvolvimento Front-End",
+    certifications_item_2_title: "Desenvolvimento Back-End",
+    certifications_item_3_title: "Banco de Dados",
 
     // Contato
     contact_title: "Contato",
-    contact_text: "Vamos conversar sobre projetos e oportunidades.",
+    contact_subtitle: "Vamos conversar sobre projetos e oportunidades.",
   },
 
   en: {
@@ -106,56 +110,58 @@ const translations = {
     // Hero
     hero_title: "Hello, I'm Benjamin",
     hero_subtitle: "Front-End Developer",
-    hero_description: "1 year of experience • 5th semester in ADS • English C1. Building modern and responsive interfaces, along with efficient and secure systems.",
+    hero_description:
+      "1 year of experience • 5th semester in SAD • English C1. Building modern and responsive interfaces, along with efficient and secure systems.",
     hero_btn_projects: "View Projects",
 
     // About
     about_title: "About Me",
     about_subtitle: "A little about my journey and goals.",
-    about_p1: 
-    "Front-End Developer with 1 year of professional experience, currently in the 5th semester of Systems Analysis and Development. Focused on responsive interfaces, code organization and componentization.",
-    about_p2: 
-    "Improving and building projects that cover the full development cycle, from Front-End to Back-End with C# and SQL Server. Advanced English (C1) and commited to continuos learning.",
-    
+    about_p1:
+      "Front-End Developer with 1 year of professional experience, currently in the 5th semester of Systems Analysis and Development. Focused on responsive interfaces, code organization and componentization.",
+    about_p2:
+      "Improving and building projects that cover the full development cycle, from Front-End to Back-End with C# and SQL Server. Advanced English (C1) and commited to continuos learning.",
+
     // Skills
     skills_title: "Skills",
     skills_subtitle: "Technologies and tools that are part of my repertoire.",
-    skills-frontend: "Front-End",
-    skills-tools: "Tools",
-    skills-backend: "Back-End / Database",
+    skills_frontend: "Front-End",
+    skills_tools: "Tools",
+    skills_backend: "Back-End / Database",
     skills_next: "Next Steps",
 
     // Experience
     experience_title: "Experience",
     experience_subtitle: "My professional experiences.",
     experience_doss_title: "Doss Imobiliária",
-    experience_doss_text: "Development and maintence of landing pages and responsive interfaces for the real estate. Mobile-first responsiveness, modern styling, Git versioning and improvements that contributed to a 30% increase in lead generation.",
-    
+    experience_doss_text:
+      "Development and maintence of landing pages and responsive interfaces for the real estate. Mobile-first responsiveness, modern styling, Git versioning and improvements that contributed to a 30% increase in lead generation.",
+
     // Projects
     projects_title: "Projects",
-    projects_subtitle: "Projects that follow my journey in the world of software development.",
+    projects_subtitle:
+      "Projects that follow my journey in the world of software development.",
     project_admin_title: "Admin Panel",
-    project_admin_description: 
-    "Responsive administrative interface developed with a focus on data organization and user experience. Enables efficient information management and clear visualization of applied status and filters.",
+    project_admin_description:
+      "Responsive administrative interface developed with a focus on data organization and user experience. Enables efficient information management and clear visualization of applied status and filters.",
     project_finance_title: "Finance Dashboard",
     project_finance_description:
-    "Web application for expense visualization and organization. View expenses by category, filter by month and year, and track financial evolution over time.",
-    
+      "Web application for expense visualization and organization. View expenses by category, filter by month and year, and track financial evolution over time.",
+
     // Certifications
     certifications_title: "Certifications",
-    certifications_text: "Courses and complementary studies.",
+    certifications_subtitle: "Courses and complementary studies.",
     certifications_item_1_title: "Front-End Development",
     certifications_item_2_title: "Back-End Development",
     certifications_item_3_title: "Database",
 
-    // Contact 
+    // Contact
     contact_title: "Contact",
-    contact_text: "Let's talk about projects and opportunities.",
+    contact_subtitle: "Let's talk about projects and opportunities.",
   },
 };
 
 const langToggle = document.getElementById("lang-toggle");
-const savedLanguage = localStorage.getItem("language") || "pt";
 
 function applyLanguage(language) {
   const elements = document.querySelectorAll("[data-i18n]");
