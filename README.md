@@ -2,7 +2,7 @@
 
 Portfólio pessoal com projetos em produção, desenvolvido do zero com HTML, CSS e JavaScript puro — sem frameworks.
 
-🔗 [Ver projeto ao vivo](https://devbenjaminsantos.github.io/landing-page/)
+🔗 [Ver projeto ao vivo](https://devbenjaminsantos.github.io/benjamin-portfolio/)
 
 ---
 
