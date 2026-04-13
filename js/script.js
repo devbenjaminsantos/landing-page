@@ -81,11 +81,13 @@ const translations = {
     projects_subtitle:
       "Projetos que acompanham minha jornada no mundo do desenvolvimento de software.",
     project_freelance_badge: "Projeto Freelancer",
-    project_freelance_title: "Primeiro Projeto Freelancer",
+    project_freelance_title: "Rego Barros Consultoria",
     project_freelance_description:
-      "Primeiro projeto entregue para cliente real e publicado na web, com foco em presença digital, responsividade e uma navegação clara para apresentar o serviço de forma profissional.",
+      "Site institucional desenvolvido do zero para apresentar a Rego Barros Consultoria na web, com foco em presença de marca, captação de leads e uma apresentação clara da instituição e de seus serviços.",
+    project_freelance_api_tag: "APIs Públicas",
     project_freelance_tag: "Cliente Real",
-    project_freelance_meta: "Lançado na web como primeiro freela em produção",
+    project_freelance_meta:
+      "Site institucional com ganho de visibilidade, divulgação dos serviços e aumento na captação de leads",
     project_admin_title: "Painel Administrativo",
     project_admin_description:
       "Interface administrativa responsiva desenvolvida com foco em organização de dados e experiência do usuário. Permite gerenciamento eficiente de informações e visualização clara de status e filtros aplicados.",
@@ -151,12 +153,13 @@ const translations = {
     projects_subtitle:
       "Projects that follow my journey in the world of software development.",
     project_freelance_badge: "Freelance Project",
-    project_freelance_title: "First Freelance Project",
+    project_freelance_title: "Rego Barros Consultoria",
     project_freelance_description:
-      "First project delivered to a real client and launched on the web, focused on digital presence, responsiveness and clear navigation to present the service professionally.",
+      "Institutional website built from scratch to establish Rego Barros Consultoria online, focused on brand presence, lead generation and a clear presentation of the institution and its services.",
+    project_freelance_api_tag: "Public APIs",
     project_freelance_tag: "Real Client",
     project_freelance_meta:
-      "Published on the web as my first production freelance project",
+      "Institutional website with stronger visibility, service promotion and increased lead generation",
     project_admin_title: "Admin Panel",
     project_admin_description:
       "Responsive administrative interface developed with a focus on data organization and user experience. Enables efficient information management and clear visualization of applied status and filters.",
