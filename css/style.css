@@ -458,11 +458,11 @@ CERTIFICATIONS
   gap: var(--spacing-lg);
 }
 
-.certification-card h3 {
+.certificate-card h3 {
   margin-bottom: var(--spacing-xs);
 }
 
-.certification-card p {
+.certificate-card p {
   color: var(--color-text-secondary);
 }
 
@@ -688,7 +688,7 @@ CERTIFICATE REFINED
 
 .certificate-details p {
   color: var(--color-text-secondary);
-  font-size: var (--font-size-sm);
+  font-size: var(--font-size-sm);
 }
 
 .certificate-year {

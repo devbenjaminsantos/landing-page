@@ -120,7 +120,7 @@ const translations = {
     about_p1:
       "Front-End Developer with 1 year of professional experience, currently in the 5th semester of Systems Analysis and Development. Focused on responsive interfaces, code organization and componentization.",
     about_p2:
-      "Improving and building projects that cover the full development cycle, from Front-End to Back-End with C# and SQL Server. Advanced English (C1) and commited to continuos learning.",
+      "Improving and building projects that cover the full development cycle, from Front-End to Back-End with C# and SQL Server. Advanced English (C1) and committed to continuous learning.",
 
     // Skills
     skills_title: "Skills",
@@ -135,7 +135,7 @@ const translations = {
     experience_subtitle: "My professional experiences.",
     experience_doss_title: "Doss Imobiliária",
     experience_doss_text:
-      "Development and maintence of landing pages and responsive interfaces for the real estate. Mobile-first responsiveness, modern styling, Git versioning and improvements that contributed to a 30% increase in lead generation.",
+      "Development and maintenance of landing pages and responsive interfaces for the real estate market. Mobile-first responsiveness, modern styling, Git versioning and improvements that contributed to a 30% increase in lead generation.",
 
     // Projects
     projects_title: "Projects",
@@ -195,7 +195,7 @@ langToggle.addEventListener("click", () => {
 });
 
 langToggle.addEventListener("keydown", (event) => {
-  if (event.key === "Enter" || event.key === "") {
+  if (event.key === "Enter" || event.key === " ") {
     event.preventDefault();
 
     const currentLanguage = localStorage.getItem("language") || "pt";
