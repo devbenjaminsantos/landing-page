@@ -21,7 +21,20 @@
       <nav class="nav">
         <h1 class="logo">Benjamin.dev</h1>
 
-        <ul class="nav-links">
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
           <li><a href="#sobre" data-i18n="nav_about">Sobre</a></li>
           <li><a href="#habilidades" data-i18n="nav_skills">Habilidades</a></li>
           <li>
@@ -275,6 +288,9 @@
 
           <div class="timeline">
             <article class="card timeline-item">
+              <span class="timeline-badge" data-i18n="experience_badge_job">
+                Experiência Profissional
+              </span>
               <h3 data-i18n="experience_doss_title">Doss Imobiliária</h3>
               <p data-i18n="experience_doss_text">
                 Desenvolvimento e manutenção de landing pages e interfaces
@@ -312,6 +328,36 @@
           </div>
 
           <div class="projects-grid">
+            <article class="card project-card">
+              <span class="project-highlight" data-i18n="project_freelance_badge">
+                Projeto Freelancer
+              </span>
+              <h3 data-i18n="project_freelance_title">
+                Primeiro Projeto Freelancer
+              </h3>
+
+              <p data-i18n="project_freelance_description">
+                Primeiro projeto entregue para cliente real e publicado na web,
+                com foco em presença digital, responsividade e uma navegação
+                clara para apresentar o serviço de forma profissional.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag" data-i18n="project_freelance_tag">
+                  Cliente Real
+                </span>
+              </div>
+
+              <div class="project-meta">
+                <span data-i18n="project_freelance_meta">
+                  Lançado na web como primeiro freela em produção
+                </span>
+              </div>
+            </article>
+
             <article class="card project-card">
               <h3 data-i18n="project_admin_title">Painel Administrativo</h3>
 
@@ -399,6 +445,12 @@
 
           <div class="certifications-grid">
             <article class="card certificate-card">
+              <span
+                class="certificate-badge"
+                data-i18n="certifications_badge_course"
+              >
+                Formação Complementar
+              </span>
               <h3 data-i18n="certifications_item_1_title">
                 Desenvolvimento Front-End
               </h3>
@@ -414,6 +466,12 @@
             </article>
 
             <article class="card certificate-card">
+              <span
+                class="certificate-badge"
+                data-i18n="certifications_badge_course"
+              >
+                Formação Complementar
+              </span>
               <h3 data-i18n="certifications_item_2_title">
                 Desenvolvimento Back-End
               </h3>
@@ -432,6 +490,12 @@
             </article>
 
             <article class="card certificate-card">
+              <span
+                class="certificate-badge"
+                data-i18n="certifications_badge_course"
+              >
+                Formação Complementar
+              </span>
               <h3 data-i18n="certifications_item_3_title">Banco de Dados</h3>
               <p class="certificate-stack">SQL Server</p>
               <div class="certificate-details">

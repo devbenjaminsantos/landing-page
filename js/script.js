@@ -71,6 +71,7 @@ const translations = {
     // Experiência
     experience_title: "Experiência",
     experience_subtitle: "Minhas experiências profissionais.",
+    experience_badge_job: "Experiência Profissional",
     experience_doss_title: "Doss Imobiliária",
     experience_doss_text:
       "Desenvolvimento e manutenção de landing pages e interfaces responsivas para o mercado imobiliário. Responsividade mobile-first, estilização moderna, versionamento com Git e melhorias que contribuíram para aumento de 30% na captação de leads.",
@@ -79,6 +80,12 @@ const translations = {
     projects_title: "Projetos",
     projects_subtitle:
       "Projetos que acompanham minha jornada no mundo do desenvolvimento de software.",
+    project_freelance_badge: "Projeto Freelancer",
+    project_freelance_title: "Primeiro Projeto Freelancer",
+    project_freelance_description:
+      "Primeiro projeto entregue para cliente real e publicado na web, com foco em presença digital, responsividade e uma navegação clara para apresentar o serviço de forma profissional.",
+    project_freelance_tag: "Cliente Real",
+    project_freelance_meta: "Lançado na web como primeiro freela em produção",
     project_admin_title: "Painel Administrativo",
     project_admin_description:
       "Interface administrativa responsiva desenvolvida com foco em organização de dados e experiência do usuário. Permite gerenciamento eficiente de informações e visualização clara de status e filtros aplicados.",
@@ -89,6 +96,7 @@ const translations = {
     // Certificações
     certifications_title: "Certificações",
     certifications_subtitle: "Cursos e estudos complementares.",
+    certifications_badge_course: "Formação Complementar",
     certifications_item_1_title: "Desenvolvimento Front-End",
     certifications_item_2_title: "Desenvolvimento Back-End",
     certifications_item_3_title: "Banco de Dados",
@@ -133,6 +141,7 @@ const translations = {
     // Experience
     experience_title: "Experience",
     experience_subtitle: "My professional experiences.",
+    experience_badge_job: "Professional Experience",
     experience_doss_title: "Doss Imobiliária",
     experience_doss_text:
       "Development and maintenance of landing pages and responsive interfaces for the real estate market. Mobile-first responsiveness, modern styling, Git versioning and improvements that contributed to a 30% increase in lead generation.",
@@ -141,6 +150,13 @@ const translations = {
     projects_title: "Projects",
     projects_subtitle:
       "Projects that follow my journey in the world of software development.",
+    project_freelance_badge: "Freelance Project",
+    project_freelance_title: "First Freelance Project",
+    project_freelance_description:
+      "First project delivered to a real client and launched on the web, focused on digital presence, responsiveness and clear navigation to present the service professionally.",
+    project_freelance_tag: "Real Client",
+    project_freelance_meta:
+      "Published on the web as my first production freelance project",
     project_admin_title: "Admin Panel",
     project_admin_description:
       "Responsive administrative interface developed with a focus on data organization and user experience. Enables efficient information management and clear visualization of applied status and filters.",
@@ -151,6 +167,7 @@ const translations = {
     // Certifications
     certifications_title: "Certifications",
     certifications_subtitle: "Courses and complementary studies.",
+    certifications_badge_course: "Complementary Training",
     certifications_item_1_title: "Front-End Development",
     certifications_item_2_title: "Back-End Development",
     certifications_item_3_title: "Database",
@@ -162,6 +179,24 @@ const translations = {
 };
 
 const langToggle = document.getElementById("lang-toggle");
+const navToggle = document.getElementById("nav-toggle");
+const navMenu = document.getElementById("nav-links");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+function toggleMobileMenu(forceState) {
+  if (!navToggle || !navMenu) {
+    return;
+  }
+
+  const shouldOpen =
+    typeof forceState === "boolean"
+      ? forceState
+      : !navMenu.classList.contains("is-open");
+
+  navMenu.classList.toggle("is-open", shouldOpen);
+  navToggle.classList.toggle("is-active", shouldOpen);
+  navToggle.setAttribute("aria-expanded", String(shouldOpen));
+}
 
 function applyLanguage(lang) {
   const elements = document.querySelectorAll("[data-i18n]");
@@ -205,11 +240,41 @@ langToggle.addEventListener("keydown", (event) => {
   }
 });
 
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    toggleMobileMenu();
+  });
+
+  navToggle.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleMobileMenu();
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      toggleMobileMenu(false);
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      toggleMobileMenu(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      toggleMobileMenu(false);
+    }
+  });
+}
+
 /* ========================
 ACTIVE NAV LINK
 ========================== */
 const sections = document.querySelectorAll("main section[id]");
-const navLinks = document.querySelectorAll(".nav-links a");
 
 function setActiveLink() {
   let currentSection = "";
