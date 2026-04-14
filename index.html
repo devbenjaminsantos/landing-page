@@ -40,6 +40,7 @@
           <li>
             <a href="#experiencia" data-i18n="nav_experience">Experiência</a>
           </li>
+          <li><a href="#freelancer" data-i18n="nav_freelance">Freelancer</a></li>
           <li><a href="#projetos" data-i18n="nav_projects">Projetos</a></li>
           <li>
             <a href="#certificacoes" data-i18n="nav_certifications"
@@ -316,19 +317,29 @@
         </div>
       </section>
 
-      <!-- PROJETOS -->
-      <section id="projetos" class="section reveal">
+      <!-- FREELANCER -->
+      <section id="freelancer" class="section reveal">
         <div class="container">
           <div class="section-header">
-            <h2 data-i18n="projects_title">Projetos</h2>
-            <p data-i18n="projects_subtitle">
-              Projetos que acompanham minha jornada no mundo do desenvolvimento
-              de software.
+            <h2 data-i18n="freelance_title">Freelancer</h2>
+            <p data-i18n="freelance_subtitle">
+              Projetos entregues para clientes reais, com foco em resultado,
+              presença digital e entrega em produção.
             </p>
           </div>
 
-          <div class="projects-grid">
+          <div class="projects-grid freelance-grid">
             <article class="card project-card">
+              <div class="project-cover project-cover-freelance">
+                <span class="project-cover-label" data-i18n="project_cover_live">
+                  Projeto Publicado
+                </span>
+                <strong>Rego Barros Consultoria</strong>
+                <p data-i18n="project_cover_freelance_text">
+                  presença de marca • leads • serviços
+                </p>
+              </div>
+
               <span class="project-highlight" data-i18n="project_freelance_badge">
                 Projeto Freelancer
               </span>
@@ -373,8 +384,34 @@
                 </a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos" class="section reveal">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="projects_title">Projetos</h2>
+            <p data-i18n="projects_subtitle">
+              Projetos que acompanham minha jornada no mundo do desenvolvimento
+              de software.
+            </p>
+          </div>
+
+          <div class="projects-grid">
 
             <article class="card project-card">
+              <div class="project-cover project-cover-admin">
+                <span class="project-cover-label" data-i18n="project_cover_product">
+                  Interface Web
+                </span>
+                <strong>Olympus Admin Panel</strong>
+                <p data-i18n="project_cover_admin_text">
+                  dashboard • filtros • gestão visual
+                </p>
+              </div>
+
               <h3 data-i18n="project_admin_title">Painel Administrativo</h3>
 
               <p data-i18n="project_admin_description">
@@ -412,6 +449,16 @@
             </article>
 
             <article class="card project-card">
+              <div class="project-cover project-cover-finance">
+                <span class="project-cover-label" data-i18n="project_cover_product">
+                  Interface Web
+                </span>
+                <strong>Finance Dashboard</strong>
+                <p data-i18n="project_cover_finance_text">
+                  gastos • categorias • evolução mensal
+                </p>
+              </div>
+
               <h3 data-i18n="project_finance_title">Dashboard Financeiro</h3>
 
               <p data-i18n="project_finance_description">

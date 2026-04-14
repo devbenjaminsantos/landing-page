@@ -472,6 +472,10 @@ PROJECTS
   gap: var(--spacing-lg);
 }
 
+.freelance-grid {
+  grid-template-columns: minmax(0, 760px);
+}
+
 .project-card h3 {
   margin-bottom: var(--spacing-md);
   color: var(--color-primary);
@@ -695,7 +699,7 @@ PROJECT CARD REFINED
   min-height: 240px;
 }
 
-.project-card:first-child {
+.freelance-grid .project-card {
   background:
     radial-gradient(
       circle at top right,
@@ -704,6 +708,81 @@ PROJECT CARD REFINED
     ),
     linear-gradient(180deg, rgba(56, 189, 248, 0.08), transparent 52%),
     var(--color-surface);
+}
+
+.project-cover {
+  position: relative;
+  min-height: 180px;
+  margin: calc(var(--spacing-lg) * -1) calc(var(--spacing-lg) * -1)
+    var(--spacing-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  border-radius: var(--radius-lg) var(--radius-lg) 1.25rem 1.25rem;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.04), rgba(15, 23, 42, 0.88)),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 28%);
+}
+
+.project-cover > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-cover strong {
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
+.project-cover p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: var(--font-size-sm);
+}
+
+.project-cover-label {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.project-cover-freelance {
+  background:
+    linear-gradient(135deg, rgba(14, 165, 233, 0.55), rgba(15, 23, 42, 0.2)),
+    url("../media/trabalhos.png") center / cover no-repeat;
+}
+
+.project-cover-admin {
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.3), rgba(15, 23, 42, 0.15)),
+    url("../media/demo.gif") center / cover no-repeat;
+}
+
+.project-cover-finance {
+  background:
+    linear-gradient(135deg, rgba(34, 197, 94, 0.3), rgba(15, 23, 42, 0.15)),
+    url("../media/navbar.png") center / cover no-repeat;
 }
 
 .project-card h3 {

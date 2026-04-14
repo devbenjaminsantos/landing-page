@@ -40,6 +40,7 @@ const translations = {
     nav_about: "Sobre",
     nav_skills: "Habilidades",
     nav_experience: "Experiência",
+    nav_freelance: "Freelancer",
     nav_projects: "Projetos",
     nav_certifications: "Certificações",
     nav_contact: "Contato",
@@ -77,9 +78,17 @@ const translations = {
       "Desenvolvimento e manutenção de landing pages e interfaces responsivas para o mercado imobiliário. Responsividade mobile-first, estilização moderna, versionamento com Git e melhorias que contribuíram para aumento de 30% na captação de leads.",
 
     // Projetos
+    freelance_title: "Freelancer",
+    freelance_subtitle:
+      "Projetos entregues para clientes reais, com foco em resultado, presença digital e entrega em produção.",
     projects_title: "Projetos",
     projects_subtitle:
       "Projetos que acompanham minha jornada no mundo do desenvolvimento de software.",
+    project_cover_live: "Projeto Publicado",
+    project_cover_product: "Interface Web",
+    project_cover_freelance_text: "presença de marca • leads • serviços",
+    project_cover_admin_text: "dashboard • filtros • gestão visual",
+    project_cover_finance_text: "gastos • categorias • evolução mensal",
     project_freelance_badge: "Projeto Freelancer",
     project_freelance_title: "Rego Barros Consultoria",
     project_freelance_description:
@@ -113,6 +122,7 @@ const translations = {
     nav_about: "About",
     nav_skills: "Skills",
     nav_experience: "Experience",
+    nav_freelance: "Freelance",
     nav_projects: "Projects",
     nav_certifications: "Certifications",
     nav_contact: "Contact",
@@ -149,9 +159,17 @@ const translations = {
       "Development and maintenance of landing pages and responsive interfaces for the real estate market. Mobile-first responsiveness, modern styling, Git versioning and improvements that contributed to a 30% increase in lead generation.",
 
     // Projects
+    freelance_title: "Freelance",
+    freelance_subtitle:
+      "Projects delivered for real clients, focused on results, digital presence and production-ready delivery.",
     projects_title: "Projects",
     projects_subtitle:
       "Projects that follow my journey in the world of software development.",
+    project_cover_live: "Published Project",
+    project_cover_product: "Web Interface",
+    project_cover_freelance_text: "brand presence • leads • services",
+    project_cover_admin_text: "dashboard • filters • visual management",
+    project_cover_finance_text: "expenses • categories • monthly tracking",
     project_freelance_badge: "Freelance Project",
     project_freelance_title: "Rego Barros Consultoria",
     project_freelance_description:
