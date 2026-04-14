@@ -65,9 +65,9 @@ const translations = {
     skills_subtitle:
       "Tecnologias e ferramentas que fazem parte do meu repertório.",
     skills_frontend: "Front-End",
-    skills_tools: "Ferramentas",
+    skills_tools_tests: "Ferramentas / Testes",
     skills_backend: "Back-End / Banco de Dados",
-    skills_next: "Próximos Passos",
+    skills_cloud: "Cloud / DevOps",
 
     // Experiência
     experience_title: "Experiência",
@@ -159,9 +159,9 @@ const translations = {
     skills_title: "Skills",
     skills_subtitle: "Technologies and tools that are part of my repertoire.",
     skills_frontend: "Front-End",
-    skills_tools: "Tools",
+    skills_tools_tests: "Tools / Testing",
     skills_backend: "Back-End / Database",
-    skills_next: "Next Steps",
+    skills_cloud: "Cloud / DevOps",
 
     // Experience
     experience_title: "Experience",
