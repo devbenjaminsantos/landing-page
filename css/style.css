@@ -761,6 +761,16 @@ main {
   border-top: 1px solid rgba(255, 255, 0.04);
 }
 
+#experiencia .section-header p,
+#freelancer .section-header p {
+  max-width: 720px;
+}
+
+#projetos .section-header p,
+#certificacoes .section-header p {
+  max-width: 560px;
+}
+
 /* ===============
 ABOUT REFINED
 =============== */
@@ -816,6 +826,9 @@ PROJECT CARD REFINED
   flex-direction: column;
   justify-content: space-between;
   min-height: 240px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 45%),
+    var(--color-surface);
 }
 
 .freelance-grid .project-card {
@@ -841,6 +854,11 @@ PROJECT CARD REFINED
   box-shadow:
     0 0 0 1px rgba(56, 189, 248, 0.08),
     0 24px 50px rgba(2, 8, 23, 0.24);
+}
+
+#freelancer .project-card-featured {
+  min-height: 430px;
+  border-radius: calc(var(--radius-lg) + 0.15rem);
 }
 
 .project-card-featured::before {
@@ -929,20 +947,36 @@ PROJECT CARD REFINED
   background-repeat: no-repeat;
 }
 
+.project-cover-freelance-alt {
+  background-color: #0f172a;
+  background-image:
+    linear-gradient(135deg, rgba(14, 165, 233, 0.24), rgba(15, 23, 42, 0.08)),
+    url("../assets/ki-dilicia.png");
+  background-position:
+    center,
+    center top;
+  background-size:
+    auto,
+    cover;
+  background-repeat: no-repeat;
+}
+
 .project-card-featured .project-cover {
   min-height: 100%;
   margin: 0;
   border-radius: var(--radius-lg) 0 0 var(--radius-lg);
   border-right: 1px solid rgba(56, 189, 248, 0.28);
   border-bottom: 0;
+  filter: brightness(0.96) saturate(1.02);
   transition:
     transform 0.35s ease,
-    filter 0.35s ease;
+    filter 0.35s ease,
+    background-position 0.35s ease;
 }
 
 .project-card-featured:hover .project-cover {
   transform: scale(1.03);
-  filter: saturate(1.1);
+  filter: brightness(1) saturate(1.08);
 }
 
 .project-card-featured .project-cover::after {
@@ -967,6 +1001,28 @@ PROJECT CARD REFINED
 .project-card-featured h3 {
   font-size: 1.65rem;
   line-height: 1.15;
+}
+
+#projetos .project-card {
+  min-height: 320px;
+  border-color: rgba(56, 189, 248, 0.14);
+}
+
+#projetos .project-card:hover {
+  border-color: rgba(56, 189, 248, 0.24);
+}
+
+#projetos .project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+#projetos .project-tags {
+  margin-top: auto;
+}
+
+#projetos .project-links {
+  padding-top: var(--spacing-lg);
 }
 
 .project-card-featured .project-meta {
@@ -1031,6 +1087,7 @@ EXPERIENCE REFINED
 .timeline {
   position: relative;
   max-width: 860px;
+  gap: var(--spacing-md);
 }
 
 .timeline-item {
@@ -1042,6 +1099,10 @@ EXPERIENCE REFINED
   background:
     linear-gradient(180deg, rgba(14, 165, 233, 0.12), transparent 55%),
     var(--color-surface);
+}
+
+#experiencia .timeline-item {
+  max-width: 760px;
 }
 
 .timeline-item::before {
@@ -1093,6 +1154,18 @@ CERTIFICATE REFINED
     ),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 50%),
     var(--color-surface);
+}
+
+#certificacoes .certifications-grid {
+  gap: var(--spacing-md);
+}
+
+#certificacoes .certificate-card {
+  border-color: rgba(34, 197, 94, 0.12);
+}
+
+#certificacoes .certificate-card:hover {
+  transform: translateY(-4px);
 }
 
 .certificate-card h3 {
@@ -1504,5 +1577,14 @@ LANGUAGE SWITCH
   .certificate-stack,
   .certificate-details p {
     font-size: var(--font-size-xs);
+  }
+
+  #projetos .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  #projetos .project-card {
+    min-height: 340px;
   }
 }

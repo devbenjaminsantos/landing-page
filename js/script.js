@@ -97,6 +97,15 @@ const translations = {
     project_freelance_api_tag: "APIs Públicas",
     project_freelance_meta:
       "Site institucional focado em presença de marca, captação de leads, divulgação dos serviços e fortalecimento da visibilidade no Google.",
+    project_freelance_2_title: "Ki-Dilicia Gourmet",
+    project_freelance_2_point_1:
+      "Estruturado para pedidos online com navegação simples e objetiva.",
+    project_freelance_2_point_2:
+      "Finalização integrada ao WhatsApp com todas as escolhas do pedido.",
+    project_freelance_2_point_3:
+      "Projeto em fase final, com fluxo funcional e interface já operante.",
+    project_freelance_2_meta:
+      "Cardapio digital focado em conversao, praticidade no pedido e aproximacao com o cliente por meio de um fluxo guiado ate o WhatsApp.",
     project_admin_title: "Painel Administrativo",
     project_admin_description:
       "Interface administrativa responsiva desenvolvida com foco em organização de dados e experiência do usuário. Permite gerenciamento eficiente de informações e visualização clara de status e filtros aplicados.",
@@ -191,6 +200,15 @@ const translations = {
     project_freelance_api_tag: "Public APIs",
     project_freelance_meta:
       "Institutional website focused on brand presence, lead generation, service promotion and stronger Google visibility.",
+    project_freelance_2_title: "Ki-Dilicia Gourmet",
+    project_freelance_2_point_1:
+      "Structured for online ordering with simple and straightforward navigation.",
+    project_freelance_2_point_2:
+      "Checkout integrated with WhatsApp including all selected order options.",
+    project_freelance_2_point_3:
+      "Project in its final stage, with the main flow working and the interface already operational.",
+    project_freelance_2_meta:
+      "Digital menu focused on conversion, ordering practicality and customer connection through a guided flow that ends on WhatsApp.",
     project_admin_title: "Admin Panel",
     project_admin_description:
       "Responsive administrative interface developed with a focus on data organization and user experience. Enables efficient information management and clear visualization of applied status and filters.",
