@@ -238,6 +238,7 @@ CARDS BASE
 NAVBAR
 ========================= */
 .header {
+  padding-top: 104px;
   background: linear-gradient(
     180deg,
     var(--color-bg-secondary) 0%,
@@ -253,9 +254,17 @@ NAVBAR
   align-items: center;
   justify-content: space-between;
   gap: var(--spacing-lg);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1100;
+  padding: 0 1rem;
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  border-radius: calc(var(--radius-lg) + 0.25rem);
+  background: rgba(15, 23, 42, 0.76);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 40px rgba(2, 8, 23, 0.16);
 }
 
 .nav-toggle {
@@ -498,7 +507,7 @@ PROJECTS
 }
 
 .freelance-grid {
-  grid-template-columns: minmax(0, 760px);
+  grid-template-columns: 1fr;
 }
 
 .project-card h3 {
@@ -826,6 +835,8 @@ PROJECT CARD REFINED
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   padding: 0;
+  min-height: 460px;
+  align-items: stretch;
   border: 1px solid rgba(56, 189, 248, 0.28);
   box-shadow:
     0 0 0 1px rgba(56, 189, 248, 0.08),
@@ -905,9 +916,17 @@ PROJECT CARD REFINED
 }
 
 .project-cover-freelance {
-  background:
-    linear-gradient(135deg, rgba(14, 165, 233, 0.38), rgba(15, 23, 42, 0.1)),
-    url("../assets/rego-barros.png") center top / cover no-repeat;
+  background-color: #0f172a;
+  background-image:
+    linear-gradient(135deg, rgba(14, 165, 233, 0.24), rgba(15, 23, 42, 0.08)),
+    url("../assets/rego-barros.png");
+  background-position:
+    center,
+    center top;
+  background-size:
+    auto,
+    contain;
+  background-repeat: no-repeat;
 }
 
 .project-card-featured .project-cover {
@@ -1023,12 +1042,14 @@ EXPERIENCE REFINED
 =============== */
 .timeline {
   position: relative;
+  max-width: 860px;
 }
 
 .timeline-item {
   position: relative;
   padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg)
     calc(var(--spacing-lg) + 0.6rem);
+  min-height: 220px;
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(14, 165, 233, 0.12), transparent 55%),
@@ -1073,7 +1094,7 @@ CERTIFICATE REFINED
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
-  min-height: 220px;
+  min-height: 190px;
   position: relative;
   overflow: hidden;
   background:
@@ -1363,7 +1384,8 @@ LANGUAGE SWITCH
 @media (max-width: 767px) {
   .nav {
     flex-wrap: wrap;
-    padding: 1rem 0;
+    top: 0.75rem;
+    padding: 1rem;
   }
 
   .nav-toggle {
@@ -1425,6 +1447,7 @@ LANGUAGE SWITCH
 
   .project-card-featured {
     grid-template-columns: 1fr;
+    min-height: unset;
   }
 
   .project-card-featured .project-cover {
@@ -1446,5 +1469,52 @@ LANGUAGE SWITCH
 @media (min-width: 768px) {
   .contact-form-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .timeline {
+    max-width: 900px;
+  }
+
+  .freelance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .freelance-grid > :only-child {
+    grid-column: 1 / -1;
+  }
+
+  .freelance-grid .project-card {
+    min-height: 420px;
+  }
+
+  .projects-grid:not(.freelance-grid) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .projects-grid:not(.freelance-grid) .project-card {
+    min-height: 100%;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .certificate-card {
+    min-height: 178px;
+    padding: var(--spacing-md);
+  }
+
+  .certificate-card h3 {
+    font-size: var(--font-size-md);
+  }
+
+  .certificate-stack,
+  .certificate-details p {
+    font-size: var(--font-size-xs);
   }
 }

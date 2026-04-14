@@ -334,6 +334,8 @@ ACTIVE NAV LINK
 const sections = document.querySelectorAll("main section[id]");
 
 function setActiveLink() {
+  toggleMobileMenu(false);
+
   let currentSection = "";
 
   sections.forEach((section) => {
