@@ -84,19 +84,19 @@ const translations = {
     projects_title: "Projetos",
     projects_subtitle:
       "Projetos que acompanham minha jornada no mundo do desenvolvimento de software.",
-    project_cover_live: "Projeto Publicado",
     project_cover_product: "Interface Web",
-    project_cover_freelance_text: "presença de marca • leads • serviços",
     project_cover_admin_text: "dashboard • filtros • gestão visual",
     project_cover_finance_text: "gastos • categorias • evolução mensal",
-    project_freelance_badge: "Projeto Freelancer",
     project_freelance_title: "Rego Barros Consultoria",
-    project_freelance_description:
-      "Site institucional desenvolvido do zero para apresentar a Rego Barros Consultoria na web, com foco em presença de marca, captação de leads e uma apresentação clara da instituição e de seus serviços.",
+    project_freelance_point_1:
+      "Construído com foco em presença de marca.",
+    project_freelance_point_2:
+      "Estruturado para captação de leads e divulgação dos serviços.",
+    project_freelance_point_3:
+      "Desenvolvido para aproximação com o público e apresentação dos serviços prestados.",
     project_freelance_api_tag: "APIs Públicas",
-    project_freelance_tag: "Cliente Real",
     project_freelance_meta:
-      "Site institucional com ganho de visibilidade, divulgação dos serviços e aumento na captação de leads",
+      "Site institucional focado em presença de marca, captação de leads, divulgação dos serviços e fortalecimento da visibilidade no Google.",
     project_admin_title: "Painel Administrativo",
     project_admin_description:
       "Interface administrativa responsiva desenvolvida com foco em organização de dados e experiência do usuário. Permite gerenciamento eficiente de informações e visualização clara de status e filtros aplicados.",
@@ -165,19 +165,19 @@ const translations = {
     projects_title: "Projects",
     projects_subtitle:
       "Projects that follow my journey in the world of software development.",
-    project_cover_live: "Published Project",
     project_cover_product: "Web Interface",
-    project_cover_freelance_text: "brand presence • leads • services",
     project_cover_admin_text: "dashboard • filters • visual management",
     project_cover_finance_text: "expenses • categories • monthly tracking",
-    project_freelance_badge: "Freelance Project",
     project_freelance_title: "Rego Barros Consultoria",
-    project_freelance_description:
-      "Institutional website built from scratch to establish Rego Barros Consultoria online, focused on brand presence, lead generation and a clear presentation of the institution and its services.",
+    project_freelance_point_1:
+      "Built with a focus on brand presence.",
+    project_freelance_point_2:
+      "Structured for lead generation and service promotion.",
+    project_freelance_point_3:
+      "Designed to strengthen audience connection and present the services offered.",
     project_freelance_api_tag: "Public APIs",
-    project_freelance_tag: "Real Client",
     project_freelance_meta:
-      "Institutional website with stronger visibility, service promotion and increased lead generation",
+      "Institutional website focused on brand presence, lead generation, service promotion and stronger Google visibility.",
     project_admin_title: "Admin Panel",
     project_admin_description:
       "Responsive administrative interface developed with a focus on data organization and user experience. Enables efficient information management and clear visualization of applied status and filters.",
