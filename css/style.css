@@ -600,13 +600,98 @@ CONTACT
   gap: var(--spacing-lg);
 }
 
-.contact-info {
+.contact-form {
+  max-width: 760px;
   display: grid;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-lg);
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(56, 189, 248, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 55%),
+    var(--color-surface);
 }
 
-.contact-info p {
+.contact-form-grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.contact-field {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.contact-field span {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: rgba(15, 23, 42, 0.24);
+  color: var(--color-text);
+  padding: 0.95rem 1rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
   color: var(--color-text-secondary);
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-color: rgba(56, 189, 248, 0.42);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.12);
+  background-color: rgba(15, 23, 42, 0.34);
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.contact-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.contact-status {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  min-height: 1.5rem;
+}
+
+.contact-status.is-success {
+  color: #4ade80;
+}
+
+.contact-status.is-error {
+  color: #f87171;
+}
+
+#contact-submit:disabled {
+  opacity: 0.75;
+  cursor: wait;
+}
+
+.hidden-field {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* =========================
@@ -1062,19 +1147,7 @@ CERTIFICATE REFINED
 CONTACT REFINED
 =============== */
 .contact-content {
-  max-width: 700px;
-}
-
-.contact-info p {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--spacing-md);
-  transition: var(--transition-fast);
-}
-
-.contact-info p:hover {
-  background-color: var(--color-surface-hover);
+  max-width: 760px;
 }
 
 /* ===============
@@ -1165,47 +1238,6 @@ PROJECT TAGS
 /* ===============
 CONTACT CLICKCABLE
 =============== */
-.contact-info {
-  display: grid;
-  gap: var(--spacing-md);
-}
-
-.contact-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--spacing-md);
-  padding: var(--spacing-md);
-  transition: var(--transition-fast);
-}
-
-.contact-item:hover {
-  background-color: var(--color-surface-hover);
-  transform: translateY(-2px);
-}
-
-.contact-item strong {
-  color: var(--color-text);
-  font-size: var(--font-size-sm);
-}
-
-.contact-item-heading {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  color: var(--color-text);
-}
-
-.contact-item span {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  word-break: break-word;
-}
-
 /* ===============
 IMAGE MODAL
 =============== */
@@ -1404,5 +1436,15 @@ LANGUAGE SWITCH
 
   .project-card-featured .project-content {
     padding: var(--spacing-lg);
+  }
+
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

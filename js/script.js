@@ -115,6 +115,19 @@ const translations = {
     // Contato
     contact_title: "Contato",
     contact_subtitle: "Vamos conversar sobre projetos e oportunidades.",
+    contact_name_label: "Nome",
+    contact_name_placeholder: "Seu nome",
+    contact_email_label: "Email",
+    contact_email_placeholder: "voce@email.com",
+    contact_message_label: "Mensagem",
+    contact_message_placeholder: "Me conte sobre seu projeto, vaga ou ideia.",
+    contact_submit: "Enviar mensagem",
+    contact_status_sending: "Enviando mensagem...",
+    contact_status_success: "Mensagem enviada com sucesso.",
+    contact_status_error:
+      "Nao foi possivel enviar agora. Tente novamente em instantes.",
+    contact_status_missing_key:
+      "Falta configurar a chave do Web3Forms no formulario.",
   },
 
   en: {
@@ -196,6 +209,20 @@ const translations = {
     // Contact
     contact_title: "Contact",
     contact_subtitle: "Let's talk about projects and opportunities.",
+    contact_name_label: "Name",
+    contact_name_placeholder: "Your name",
+    contact_email_label: "Email",
+    contact_email_placeholder: "you@email.com",
+    contact_message_label: "Message",
+    contact_message_placeholder:
+      "Tell me about your project, role or idea.",
+    contact_submit: "Send message",
+    contact_status_sending: "Sending message...",
+    contact_status_success: "Message sent successfully.",
+    contact_status_error:
+      "Unable to send right now. Please try again in a moment.",
+    contact_status_missing_key:
+      "The Web3Forms access key still needs to be configured.",
   },
 };
 
@@ -221,12 +248,21 @@ function toggleMobileMenu(forceState) {
 
 function applyLanguage(lang) {
   const elements = document.querySelectorAll("[data-i18n]");
+  const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]");
 
   elements.forEach((element) => {
     const key = element.getAttribute("data-i18n");
 
     if (translations[lang] && translations[lang][key]) {
       element.textContent = translations[lang][key];
+    }
+  });
+
+  placeholderElements.forEach((element) => {
+    const key = element.getAttribute("data-i18n-placeholder");
+
+    if (translations[lang] && translations[lang][key]) {
+      element.setAttribute("placeholder", translations[lang][key]);
     }
   });
 
@@ -352,6 +388,10 @@ IMAGE MODAL
 const profileImage = document.getElementById("profile-image");
 const imageModal = document.getElementById("image-modal");
 const imageModalClose = document.getElementById("image-modal-close");
+const contactForm = document.getElementById("contact-form");
+const contactStatus = document.getElementById("contact-status");
+const contactSubmit = document.getElementById("contact-submit");
+const web3FormsAccessKey = document.getElementById("web3forms-access-key");
 
 if (profileImage && imageModal && imageModalClose) {
   profileImage.addEventListener("click", () => {
@@ -371,6 +411,51 @@ if (profileImage && imageModal && imageModalClose) {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       imageModal.classList.remove("show");
+    }
+  });
+}
+
+if (contactForm && contactStatus && contactSubmit && web3FormsAccessKey) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const currentLanguage = localStorage.getItem("language") || "pt";
+    const accessKey = web3FormsAccessKey.value.trim();
+
+    if (!accessKey) {
+      contactStatus.textContent =
+        translations[currentLanguage].contact_status_missing_key;
+      contactStatus.classList.add("is-error");
+      return;
+    }
+
+    contactStatus.textContent = translations[currentLanguage].contact_status_sending;
+    contactStatus.classList.remove("is-error", "is-success");
+    contactSubmit.disabled = true;
+
+    try {
+      const formData = new FormData(contactForm);
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        contactStatus.textContent =
+          translations[currentLanguage].contact_status_success;
+        contactStatus.classList.add("is-success");
+        contactForm.reset();
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
+    } catch (error) {
+      contactStatus.textContent =
+        translations[currentLanguage].contact_status_error;
+      contactStatus.classList.add("is-error");
+    } finally {
+      contactSubmit.disabled = false;
     }
   });
 }
