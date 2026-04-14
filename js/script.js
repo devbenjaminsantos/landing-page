@@ -46,19 +46,21 @@ const translations = {
     nav_contact: "Contato",
 
     // Hero
-    hero_title: "Olá, eu sou Benjamin",
-    hero_subtitle: "Desenvolvedor de Software",
+    hero_title: "Benjamin Montenegro",
+    hero_subtitle:
+      "Desenvolvedor Front-End com foco em interfaces e produtos web",
     hero_description:
-      "1 ano de experiência • 5˚ período em ADS • Inglês C1. Construindo interfaces modernas e responsivas, além de sistemas eficientes e seguros.",
+      "1 ano de experiência profissional • 5˚ período em ADS • Inglês C1. Desenvolvendo interfaces responsivas, experiências web bem resolvidas e soluções que conectam produto, negócio e usabilidade.",
     hero_btn_projects: "Ver Projetos",
 
     // Sobre
     about_title: "Sobre Mim",
-    about_subtitle: "Um pouco sobre minha jornada e objetivos.",
+    about_subtitle:
+      "Formação, experiência prática e foco em evolução contínua.",
     about_p1:
-      "Desenvolvedor Front-End com 1 ano de experiência profissional, atualmente cursando o 5˚ período de Análise e Desenvolvimento de Sistemas. Foco em interfaces responsivas, organização de código e componentização.",
+      "Atuo no desenvolvimento Front-End com experiência profissional em interfaces para web, landing pages e projetos com foco em clareza visual, responsividade e organização de código.",
     about_p2:
-      "Aprimorando e construindo projetos que cobrem o ciclo completo de desenvolvimento, desde o Front-End ao Back-End com C# e SQL Server. Inglês avançado (C1) e comprometido com aprendizado contínuo.",
+      "Também desenvolvo projetos que percorrem o fluxo completo da aplicação, integrando Front-End, Back-End com C# e SQL Server, testes e publicação. Inglês avançado (C1) e compromisso contínuo com evolução técnica.",
 
     // Habilidades
     skills_title: "Habilidades",
@@ -123,7 +125,8 @@ const translations = {
 
     // Contato
     contact_title: "Contato",
-    contact_subtitle: "Vamos conversar sobre projetos e oportunidades.",
+    contact_subtitle:
+      "Se houver um projeto, oportunidade ou parceria, minha caixa de entrada está aberta.",
     contact_name_label: "Nome",
     contact_name_placeholder: "Seu nome",
     contact_email_label: "Email",
@@ -150,19 +153,21 @@ const translations = {
     nav_contact: "Contact",
 
     // Hero
-    hero_title: "Hello, I'm Benjamin",
-    hero_subtitle: "Software Developer",
+    hero_title: "Benjamin Montenegro",
+    hero_subtitle:
+      "Front-End Developer focused on interfaces and web products",
     hero_description:
-      "1 year of experience • 5th semester in SAD • English C1. Building modern and responsive interfaces, along with efficient and secure systems.",
+      "1 year of professional experience • 5th semester in SAD • English C1. Building responsive interfaces, polished web experiences and solutions that connect product, business and usability.",
     hero_btn_projects: "View Projects",
 
     // About
     about_title: "About Me",
-    about_subtitle: "A little about my journey and goals.",
+    about_subtitle:
+      "Education, hands-on experience and a strong focus on continuous growth.",
     about_p1:
-      "Front-End Developer with 1 year of professional experience, currently in the 5th semester of Systems Analysis and Development. Focused on responsive interfaces, code organization and componentization.",
+      "I work in Front-End development with professional experience in web interfaces, landing pages and projects focused on visual clarity, responsiveness and code organization.",
     about_p2:
-      "Improving and building projects that cover the full development cycle, from Front-End to Back-End with C# and SQL Server. Advanced English (C1) and committed to continuous learning.",
+      "I also build projects that go through the full application flow, connecting Front-End, Back-End with C# and SQL Server, testing and deployment. Advanced English (C1) and a consistent commitment to technical growth.",
 
     // Skills
     skills_title: "Skills",
@@ -226,7 +231,8 @@ const translations = {
 
     // Contact
     contact_title: "Contact",
-    contact_subtitle: "Let's talk about projects and opportunities.",
+    contact_subtitle:
+      "If there is a project, opportunity or partnership in mind, my inbox is open.",
     contact_name_label: "Name",
     contact_name_placeholder: "Your name",
     contact_email_label: "Email",
