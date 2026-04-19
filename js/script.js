@@ -88,7 +88,7 @@ const translations = {
       "Projetos que acompanham minha jornada no mundo do desenvolvimento de software.",
     project_cover_product: "Interface Web",
     project_cover_admin_text: "dashboard • filtros • gestão visual",
-    project_cover_finance_text: "gastos • categorias • evolução mensal",
+    project_cover_finance_text: "financas • autenticacao • visao consolidada",
     project_freelance_title: "Rego Barros Consultoria",
     project_freelance_point_1:
       "Construído com foco em presença de marca.",
@@ -111,9 +111,8 @@ const translations = {
     project_admin_title: "Painel Administrativo",
     project_admin_description:
       "Interface administrativa responsiva desenvolvida com foco em organização de dados e experiência do usuário. Permite gerenciamento eficiente de informações e visualização clara de status e filtros aplicados.",
-    project_finance_title: "Dashboard Financeiro",
-    project_finance_description:
-      "Aplicação web para visualização e organização de gastos. Permite visualizar gastos por categoria, filtrar por mês e ano, e acompanhar a evolução financeira ao longo do tempo. Além disso, é responsivo e otimizado para diferentes dispositivos, garantindo uma experiência fluida tanto em desktop quanto em mobile.",
+    project_finance_title: "Finova",
+    project_finance_description: "Aplicação para gestão financeira.",
 
     // Certificações
     certifications_title: "Certificações",
@@ -194,7 +193,7 @@ const translations = {
       "Projects that follow my journey in the world of software development.",
     project_cover_product: "Web Interface",
     project_cover_admin_text: "dashboard • filters • visual management",
-    project_cover_finance_text: "expenses • categories • monthly tracking",
+    project_cover_finance_text: "finance • authentication • consolidated view",
     project_freelance_title: "Rego Barros Consultoria",
     project_freelance_point_1:
       "Built with a focus on brand presence.",
@@ -217,9 +216,8 @@ const translations = {
     project_admin_title: "Admin Panel",
     project_admin_description:
       "Responsive administrative interface developed with a focus on data organization and user experience. Enables efficient information management and clear visualization of applied status and filters.",
-    project_finance_title: "Finance Dashboard",
-    project_finance_description:
-      "Web application for expense visualization and organization. View expenses by category, filter by month and year, and track financial evolution over time.",
+    project_finance_title: "Finova",
+    project_finance_description: "Application for financial management.",
 
     // Certifications
     certifications_title: "Certifications",
