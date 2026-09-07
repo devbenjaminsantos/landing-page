@@ -78,7 +78,7 @@ const translations = {
       "Uma aplicação financeira pessoal construída para transformar rotina, metas e gastos em uma visão mais clara.",
     finova_role: "Full Stack / Produto",
     finova_idea:
-      "Dar contexto aos dados financeiros antes de pedir uma decisão.",
+      "Clareza, praticidade e organização para uma melhor vida financeira.",
     metadata_role_label: "FUNÇÃO",
     metadata_stack_label: "TECNOLOGIAS",
     metadata_idea_label: "IDEIA CENTRAL",
@@ -205,7 +205,7 @@ const translations = {
       "A personal finance app built to turn routines, goals and expenses into a clearer picture.",
     finova_role: "Full Stack / Product",
     finova_idea:
-      "Give financial data context before asking for a decision.",
+      "Clarity, practicality and organization for a better financial life.",
     metadata_role_label: "ROLE",
     metadata_stack_label: "TECHNOLOGIES",
     metadata_idea_label: "CORE IDEA",
