@@ -1,57 +1,42 @@
-# 🌐 Benjamin.dev — Portfólio Pessoal
+# Benjamin Montenegro
 
-Portfólio pessoal com projetos em produção, desenvolvido do zero com HTML, CSS e JavaScript puro — sem frameworks.
+Portfólio pessoal de Benjamin Montenegro, engenheiro de software com foco em interfaces, APIs e sistemas em nuvem.
 
-🔗 [Ver projeto ao vivo](https://devbenjaminsantos.github.io/benjamin-portfolio/)
+O site foi desenvolvido do zero com HTML, CSS e JavaScript, sem frameworks, e apresenta experiências profissionais, projetos autorais, certificações e tecnologias utilizadas.
 
----
+## Acesso
 
-## 🖼 Preview
+- [Portfólio](https://benjaminmontenegro.com)
+- [GitHub](https://github.com/devbenjaminsantos)
+- [LinkedIn](https://linkedin.com/in/benjaminmontenegro)
+- [Contato por e-mail](mailto:benjamontenegro.dev@gmail.com)
 
-! [Demo](./media/demo.gif)
-! [Navbar](./media/navbar.png)
-! [Habilidades](./media/habilidades.png)
-! [Trabalhos](./media/trabalhos.png)
-! [Contato](./media/contato.png)
+## Recursos
 
----
+- Conteúdo em português e inglês com internacionalização própria
+- Tema claro e escuro
+- Layout responsivo
+- Seções de experiência profissional, projetos, stack e educação
+- Certificados apresentados em janela de visualização
+- Player integrado com a trilha sonora do portfólio
 
-## ✨ Funcionalidades
+## Projetos autorais
 
-- 🌍 Sistema de internacionalização PT/EN (i18n) — sem bibliotecas externas
-- 🌙 Tema claro/escuro
-- 📂 Projetos em produção com links ativos
-- 📬 Formulário de contato _(em breve)_
+### Héstia
 
----
+Aplicação de gestão financeira pessoal com autenticação, metas, análises, importação de dados e infraestrutura em nuvem.
 
-## 🛠 Tecnologias
+- [Acessar aplicação](https://hestia-app.vercel.app)
+- [Ver repositório](https://github.com/devbenjaminsantos/hestia-app)
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+### RunBase
 
----
+Sistema administrativo para centralizar operações internas, clientes, planos, pedidos, usuários e indicadores.
 
-## 🚀 Como rodar localmente
+- [Ver repositório](https://github.com/devbenjaminsantos/runbase-system)
 
-### Clone o repositório
+## Tecnologias
 
-git clone https://github.com/devbenjaminsantos/benjamin-portfolio
-
-### Abra o index.html no navegador
-
-### Ou use a extensão Live Server no VS Code
-
----
-
-## 📌 Próximos passos
-
-- [ ] Formulário de contato funcional
-- [ ] Novos projetos em produção
-
----
-
-## 👨‍💻 Autor
-
-Feito por **Benjamin Montenegro** — [LinkedIn](https://linkedin.com/in/benjaminmontenegro) | [Portfólio](https://devbenjaminsantos.github.io/benjamin-portfolio/)
+- HTML5
+- CSS3
+- JavaScript
