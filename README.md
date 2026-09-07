@@ -1,41 +1,41 @@
 # Benjamin Montenegro
 
-Portfólio pessoal de Benjamin Montenegro, engenheiro de software com foco em interfaces, APIs e sistemas em nuvem.
+[English](./README.md) | [Português](./README-pt-BR.md)
 
-O site foi desenvolvido do zero com HTML, CSS e JavaScript, sem frameworks, e apresenta experiências profissionais, projetos autorais, certificações e tecnologias utilizadas.
+This portfolio was built with HTML, CSS, and JavaScript, without frameworks. It provides a brief overview of professional experience, projects, tech stack, and background.
 
-## Acesso
+## Access
 
-- [Portfólio](https://benjaminmontenegro.com)
+- [Portfolio](https://benjaminmontenegro.com)
 - [GitHub](https://github.com/devbenjaminsantos)
 - [LinkedIn](https://linkedin.com/in/benjaminmontenegro)
-- [Contato por e-mail](mailto:benjamontenegro.dev@gmail.com)
+- [Contact by email](mailto:benjamontenegro.dev@gmail.com)
 
-## Recursos
+## Features
 
-- Conteúdo em português e inglês com internacionalização própria
-- Tema claro e escuro
-- Layout responsivo
-- Seções de experiência profissional, projetos, stack e educação
-- Certificados apresentados em janela de visualização
-- Player integrado com a trilha sonora do portfólio
+- English and Portuguese content with custom internationalization
+- Light and dark themes
+- Responsive layout
+- Professional experience, projects, tech stack, and education sections
+- Certificates displayed in a modal viewer
+- Integrated player with the portfolio soundtrack
 
-## Projetos autorais
+## Personal Projects
 
 ### Héstia
 
-Aplicação de gestão financeira pessoal com autenticação, metas, análises, importação de dados e infraestrutura em nuvem.
+Personal finance management application with authentication, goals, analytics, data import, and cloud infrastructure.
 
-- [Acessar aplicação](https://hestia-app.vercel.app)
-- [Ver repositório](https://github.com/devbenjaminsantos/hestia-app)
+- [Access the application](https://hestia-app.vercel.app)
+- [View repository](https://github.com/devbenjaminsantos/hestia-app)
 
 ### RunBase
 
-Sistema administrativo para centralizar operações internas, clientes, planos, pedidos, usuários e indicadores.
+Administrative system for centralizing internal operations, clients, plans, orders, users, and business metrics.
 
-- [Ver repositório](https://github.com/devbenjaminsantos/runbase-system)
+- [View repository](https://github.com/devbenjaminsantos/runbase-system)
 
-## Tecnologias
+## Technologies
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
